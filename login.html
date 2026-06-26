@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<title>تسجيل الدخول | QUAVRON</title>
+  <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="css/style.css">
-
+  <title>Login</title>
 </head>
-<body>
 
-<section class="login-page">
+<body class="bg-[#0f1117] text-white flex items-center justify-center min-h-screen">
 
-<form class="login-box" id="loginForm">
+  <div class="bg-[#1f2026] p-8 rounded-2xl w-full max-w-md">
 
-<h2>تسجيل الدخول</h2>
+    <h1 class="text-3xl font-bold mb-6 text-indigo-400">
+      Login
+    </h1>
 
-<input type="email" id="email" placeholder="البريد الإلكتروني">
+    <form class="space-y-4">
 
-<input type="password" id="password" placeholder="كلمة المرور">
+      <input
+        type="email"
+        placeholder="Email"
+        class="w-full p-4 rounded-xl bg-[#0f1117] border border-gray-700"
+      >
 
-<button type="submit">
-دخول
-</button>
+      <input
+        type="password"
+        placeholder="Password"
+        class="w-full p-4 rounded-xl bg-[#0f1117] border border-gray-700"
+      >
 
-</form>
+      <button
+        type="submit"
+        class="w-full bg-indigo-600 hover:bg-indigo-500 py-3 rounded-xl">
+        Sign In
+      </button>
 
-</section>
+    </form>
 
-<script src="js/auth.js"></script>
+  </div>
 
 </body>
 </html>
