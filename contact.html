@@ -1,48 +1,48 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<title>تواصل معنا | QUAVRON</title>
+  <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="css/style.css">
-
+  <title>Contact</title>
 </head>
-<body>
 
-<nav class="navbar">
-  <h1>QUAVRON</h1>
+<body class="bg-[#0f1117] text-white p-10">
 
-  <div>
-    <a href="index.html">الرئيسية</a>
-    <a href="about.html">حول</a>
-    <a href="services.html">الخدمات</a>
-  </div>
-</nav>
+  <h1 class="text-4xl font-bold mb-6 text-indigo-400">
+    Contact
+  </h1>
 
-<section class="page">
+  <form class="max-w-xl space-y-4">
 
-<h2>تواصل معنا</h2>
+    <input
+      type="text"
+      placeholder="Your Name"
+      class="w-full p-4 rounded-xl bg-[#1f2026] border border-gray-700"
+    >
 
-<form class="contact-form">
+    <input
+      type="email"
+      placeholder="Email"
+      class="w-full p-4 rounded-xl bg-[#1f2026] border border-gray-700"
+    >
 
-<input type="text" placeholder="الاسم">
+    <textarea
+      placeholder="Message"
+      rows="5"
+      class="w-full p-4 rounded-xl bg-[#1f2026] border border-gray-700"
+    ></textarea>
 
-<input type="email" placeholder="البريد الإلكتروني">
+    <button
+      type="submit"
+      class="bg-indigo-600 hover:bg-indigo-500 px-6 py-3 rounded-xl">
+      Send Message
+    </button>
 
-<textarea placeholder="رسالتك"></textarea>
-
-<button type="submit">
-إرسال
-</button>
-
-</form>
-
-</section>
-
-<script src="js/main.js"></script>
+  </form>
 
 </body>
 </html>
