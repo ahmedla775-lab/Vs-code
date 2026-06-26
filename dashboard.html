@@ -1,57 +1,41 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<title>Dashboard | QUAVRON</title>
+  <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="css/style.css">
-
+  <title>Dashboard</title>
 </head>
-<body>
 
-<div class="dashboard">
+<body class="bg-[#0f1117] text-white p-10">
 
-<aside class="sidebar">
+  <h1 class="text-4xl font-bold text-indigo-400 mb-8">
+    Dashboard
+  </h1>
 
-<h2>QUAVRON</h2>
+  <div class="grid md:grid-cols-3 gap-6">
 
-<a href="#">الرئيسية</a>
-<a href="#">المستخدمون</a>
-<a href="#">الإعدادات</a>
+    <div class="card">
+      <h2 class="text-xl font-bold">Projects</h2>
+      <p>12 Active Projects</p>
+    </div>
 
-</aside>
+    <div class="card">
+      <h2 class="text-xl font-bold">Storage</h2>
+      <p>24GB Used</p>
+    </div>
 
-<main class="dashboard-content">
+    <div class="card">
+      <h2 class="text-xl font-bold">AI Requests</h2>
+      <p>128 Requests Today</p>
+    </div>
 
-<h1>لوحة التحكم</h1>
+  </div>
 
-<div class="cards">
-
-<div class="card">
-<h3>المستخدمون</h3>
-<p>120</p>
-</div>
-
-<div class="card">
-<h3>المشاريع</h3>
-<p>15</p>
-</div>
-
-<div class="card">
-<h3>الطلبات</h3>
-<p>48</p>
-</div>
-
-</div>
-
-</main>
-
-</div>
-
-<script src="js/dashboard.js"></script>
+  <script src="dashboard.js"></script>
 
 </body>
 </html>
